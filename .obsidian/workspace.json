@@ -171,8 +171,10 @@
   },
   "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
-    "image/ch1/tcp_ip.png",
+    "Chapter 2  Physical Layer.md",
     "Chapter 1 Introduction to Computer Network.md",
+    "image/ch1/encapsulation.png",
+    "image/ch1/tcp_ip.png",
     "image/ch1/osi_model.png",
     "push.sh",
     "image/ch1/peer2peer.png",
@@ -182,7 +184,6 @@
     "Chapter 6 Application Layer.md",
     "Chapter 5 Transport Layer.md",
     "Chapter 4 Network Layer.md",
-    "Chapter 3 Data Link Layer.md",
-    "Chapter 2  Physical Layer.md"
+    "Chapter 3 Data Link Layer.md"
   ]
 }

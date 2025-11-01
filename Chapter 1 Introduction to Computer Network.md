@@ -333,5 +333,91 @@
 | Coupling           | Layers are designed to be more independent                                                                  | TL is tightly coupled with IL; TCP segments are payload for IP datagrams                                                |
 | Header             | Each layer adds its own Header                                                                              | the TCP/UDP header is considered part of the data payload from IL's persepctive                                         |
 # 1.6 Data Encapsulation
-# 1.6 Example Network: The internet, X.25, Frame Relay, Ethernet, VoIP, NGN, MPLS, xDSL
-[[Chapter 2  Physical Layer]]
+- Definition: Systematic process by which each layer in a layered protocol (like OSI or TCP/IP) adds its own control information (in the form of headers and/or trailers) to the original data, creating a layered unit of data called Protocol Data Unit
+## For OSI Model
+1. Application Layer
+	- encapsulation: user generated data (eg: an email message or webpage request) is created here
+	- output: message or raw data
+2. Presentation Layer
+	- encapsulation: transforms the message into a standard format, if necessary
+	- output: translated message
+3. Session Layer
+	- encapsulation: adds control information for session management (eg: start, end)
+	- output: session-managed message
+4. Transport Layer
+	- encapsulation: adds the transport layer header (eg: TCP or UDP) which may include:
+		- source and destination port numbers
+		- sequence and acknowledgement numbers
+	- output: segment if TCP, or datagram if UDP
+5. Network Layer
+	- encapsulation: adds the network layer (IP headers) containing:
+		- source and destination IP address
+		- Routing information
+	- output: packet
+6. Data Link Layer
+	- encapsulation: adds the data link layer header and trailer including:
+		- mac address
+		- frame delimiters
+		- error-checking information (e.g.: CRC in trailer)
+	- output: frame
+7. Physical Layer
+	- encapsulation: no header/trailer added; it just transmits bits over the physical medium
+	- output: bits (physical signals)
+8. Figure:
+   ![[encapsulation.png]]
+## Headers and Trailers
+- Headers are the elements added at the beginning of a data unit that contain control information such as addressing, protocol version, sequencing, etc
+- Trailers are the elements added at the end of a data unit that contain error detection or other integrity-checking information (e.g., CRC)
+
+### How they are added/removed
+1. Adding (transmission - sender):
+	- data moves down the protocol stack
+	- each layer adds its own header (and a trailer at the Data Link Layer) to the data unit it receives from the layer above
+2. Removing (reception - receiver):
+	- bits are received at the physical layer and converted into a frame
+	- the data link layer removes its header and trailer, checks for errors and passes the packet up
+	- each subsequent layer removes its respective header and processes the data before passing to the layer above, until the original message is delivered to the application.
+# 1.7 Example Network: The internet, X.25, Frame Relay, Ethernet, VoIP, NGN, MPLS, xDSL
+## 1.7.1 The Internet
+- global network of networks using TCP/IP protocol suite
+- Has no centralised governance; policies are set by individual constituent networks
+- key overarching authorities are ICANN and IETF
+- Enables a vast range of services and information resources
+## 1.7.2 X.25
+- An old ITU-T standard for packet-switched WANs
+- Connection-oriented and provides reliable, error-checked virtual circuits
+- maps to the bottom three layers of the OSI model
+- Adv: very reliable
+  disadv: slow due to high overhead
+## 1.7.3 Frame Relay
+- A high-performance WAN protocol operating at the Data Link Layer
+- Connection-oriented but only detects errors (drops bad frames, no retransmission)
+- Uses DLCI (Data-Link Connection Identifier) to identify virtual circuits
+- Faster than X.25 due to lower overhead, designed for more reliable modern lines
+## 1.7.4 Ethernet
+- The dominant Link Layer Technology for LANs
+- Defines how devices format and transmit data on the same network segment
+- uses protocols like CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
+- Foundation for most wired office and home networks
+## 1.7.5 VoIP (Voice over IP)
+- Methodology for delivering voice communications over IP networks (like the internet).
+- Converts analogue voice signals into digital data packets for transmission
+- Bypasses the traditional phone network (PSTN), reducing costs
+- Also known as IP Telephony or Internet Telephony
+## 1.7.6 NGN (Next-Generation Network)
+- A packet-based network that consolidates modern telecom services
+- Key principle: Service functions are independent of the underlying transport technology
+- supports generalised mobility and unrestricted access to multiple providers
+- aims to replace legacy circuit-switched networks like PSTN
+## 1.7.7 MPLS (Multiprogramming Label Switching)
+- A high-performance "Layer 2.5" routing technique for carrier backbones
+- forwards traffic based on short labels, not complex IP addresses, speeding up flow
+- Protocol-independent; can carry many types of traffic (IP, Ethernet, ATM).
+- Creates virtual paths across a network, improving traffic engineering and Quality of Service
+## 1.7.8 xDSL (Digital Subscriber Line)
+- A family of technologies providing high-speed internet over copper telephone lines
+- A "last-mile" technology connecting homes/offices to the telephone exchange
+- Asymmetric DSL (ADSL) is common, offering higher download than upload speeds
+- Much faster than traditional dial-up, allowing voice and data simultaneously
+
+[Next Chapter][[Chapter 2  Physical Layer]]]
