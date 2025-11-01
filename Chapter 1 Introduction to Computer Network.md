@@ -214,7 +214,124 @@
 9. explain design issues for layers in detail
 10. explain about the design issues of computer network software
 # 1.4 OSI Model and TCP/IP Model
+## OSI Model
+- International Standard Organisation (ISO) has developed a reference for network design in 1977 commonly known as Open System Interconnection
+- Definition: A theoretical, seven-layer reference model developed by ISO that standardised the functions of a communication system into distinct layers
+- it provides a set of guidelines for network operation.
+- concept: OSI model is a framework, not a network architecture itself, as 
+	- it specifies what each layer should do,
+	- not the exact protocols to use
+- Figure:
+  ![[osi_model.png]]
+### Layer 1: Physical Layer
+- transmission of raw data bits over communication lines
+- defines electrical, mechanical, and procedural specifications for activating the physical link
+- concerns with cables, hubs, bits, signals
+### Layer 2: Data Link Layer
+- provides a direct link control on the network
+- node-to-node delivery and framing
+- transmits the frames sequentially over the channel
+- does physical addressing
+- controls flow and error detection
+### Layer 3: Network Layer
+- determines the best path for data transmission
+- provides routing and related functions that enable multiple data links to be combined into an inter-network
+- some functions of the network layer are: routing and forwarding, packet handling, maintaining routing information
+- does networking address and data transmission between the subnets
+### Layer 4: Transport Layer
+- Transport layer manages end to end connection
+- accepts data from the above layer, splits it up into smaller units and passes these to lower layers isolating from each other
+- manages end to end connection and data delivery between two hosts
+- provides flow control, congestion control and also provides sequencing
+### Layer 5: Session Layer
+- allows users on different machines to establish sessions between them
+- includes setting of various communication parameters like synchronisation, dialog control
+- determines the beginning, middle and end of session conversation
+### Layer 6: Presentation layer
+- selects data structure, provides data transfer syntax and semantics
+- maintains the format of data and ensures the data is readable by the application
+- involves data compression, decompression, encryption, decryption, etc.
+### Layer 7: Application Layer
+- provides an interface between user and network
+- provides network services directly to user applications
+- eg: message handling system, standards for electronic mail, virtual terminal standards
+- to allow applications to communicate with different terminals, file transfer and access between different systems
+### Significance of OSI Model
+- Standardisation of Network functions:
+	- the model defines clear functional boundaries
+	- allows for equipment and software from different vendors to interpolate, provided they conform to protocols defined at each layer
+- layered abstraction:
+	- by dividing networking tasks into layers, abstraction is achieved
+	- each layer focuses on speific tasks and can be developed independently
+- facilitates protocol design and development
+	- protocol designers can focus on implementing and optimising specific layers without concern for the complete networking stack
+- Promotes modularity and flexibility
+	- changes in one layer doesn't necessitate change in other layers
+	- this promotes a modular and flexible design
+- simple troubleshooting and networking management
+- educational clarity
+- guidance for protocol standardisation bodies
+### Physical Channel vs Physical Layer
+
+| Aspect     | Channel                                                             | Layer                                                                                                                                                                     |
+| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Defn       | A medium/path through which signals are transmitted between devices | lowest layer of OSI model that defines electrical, mechanical, procedural and functional specifications for activating, maintaining and deactivating the physical channel |
+| function   | Acts as the carrier for bitstreams                                  | Translates digital data into signals to be transmitted and vice verse                                                                                                     |
+| scope      | concerned with physical medium                                      | concerned with signal representation, data rate, modulation, etc                                                                                                          |
+| visibility | not a layer, just a resource to be used                             | an actual layer in OSI model                                                                                                                                              |
+| eg         | optical fiber, 2.4 GHz WiFi band                                    | defines voltage levels for bits on a copper wire, pin configuration of RJ45                                                                                               |
+
+## TCP/IP Model
+- stands for Transmission Control Protocol and Internet Protocol
+- used by ARPANET (Advanced Research Project Agency)
+- later used by the Internet
+- defines how to use the network to transmit on IP datagram
+- main goal is to build interconnection of networks referrred to as Internet that provides universal communication services over heteregenous physical networks
+- figure:
+  ![[tcp_ip.png]]
+### Layer 1: Host-to-network
+- lowest layer of TCP/IP Model
+- aka network access layer
+- a suitable protocol is used to connect to the host so that packets can be sent over it
+### Layer 2: Internet Layer
+- provides services that are roughly equivalent to the OSI network layer
+- the task is to allow the host to insert packets into any network and make them travel independently to the destination
+- holds the architecture together
+- defines the packet format and a prtocol known as IP
+### Layer 3: Transport Layer
+- provides end-to-end communication services for application
+- manages data segmentation, error control and flow control
+
+- two protocols are defined in this layer: TCP and UDP
+- TCP is a reliable connection oriented prtoocol which is used when the application wants accurate delivery
+- UDP is an unreliable connection protocol used for applications which do not want TCP's sequencing, flow control
+- UDP is used where prompt delivery is preferred rather than accurate delivery
+### Layer 4: Application Layer
+- includes the OSI's session, presentation and application layers
+- uses higher level protocol where users typically interact with the network
+- different layer protocols in TCP/IP including SMTP, POP, HTTP, FTP as they are required.
 # 1.5 Comparison of OSI / TCP/IP
+| Aspect                | OSI                                                             | TCP/IP                                                                                   |
+| --------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Origin & Purpose      | Theoretical model meant as a reference architecture             | Practical model designed for real world implementation                                   |
+| layers:               | 7 layers with strict, clear boundaries                          | 4 layers with merged and blurred between them                                            |
+| protocol independence | Protocol-agnostic: protocols are not predefined                 | Protocols like IP, TCP, UDP, HTTP are defined within the model                           |
+| flexibility           | More flexible; encourages layer independence and modular design | Less flexible due to tighter coupling between layers                                     |
+| design approach       | Top-down (model first, then protocols)                          | Bottom-up (protocols first, then model)                                                  |
+| scope of application  | Application, presentation and sessions are separate layers      | A single application layer encompasses all three OSI upper-layer functions               |
+| reliability           | Reliability is a primary function of Transport Layer            | Reliability ishandled by  TCP, but the core Internet Layer's IP is inherently unreliable |
+| Adoption/Usage        | Used primarily as a teaching and reference tool                 | The actual architecture of the modern internt                                            |
+
+**OSI vs TCP/IP**: Network/Internet and Transport Layer Comparison
+
+| Aspect             | OSI's N/T layers                                                                                            | TCP/IP's I/T layers                                                                                                     |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Layer Organisation | Network Layer and transport layer are separate                                                              | internet layer and transport layer are separate                                                                         |
+| primary focus      | NL: connection-oriented & connection-less services<br>TL : primarily connection-oriented, reliable delivery | IL: Strictly connectionless, "best-effort" delivery<br>TL: Offers both reliable (TCP) and connectionless (UDP) services |
+| Addressing         | NL: Uses abstract Network Address<br>TL: Uses Port Addresses                                                | IL: Uses logical IP addresses<br>TL: Uses Port Numbers                                                                  |
+| Scope of Service:  | TL: Provides true end-to-end, source-to-destination reliability                                             | TL: Provides host-to-host (process-to-process) service, built on top of a hop-to-hop Internet Layer                     |
+| Coupling           | Layers are designed to be more independent                                                                  | TL is tightly coupled with IL; TCP segments are payload for IP datagrams                                                |
+| Header             | Each layer adds its own Header                                                                              | the TCP/UDP header is considered part of the data payload from IL's persepctive                                         |
 # 1.6 Data Encapsulation
 # 1.6 Example Network: The internet, X.25, Frame Relay, Ethernet, VoIP, NGN, MPLS, xDSL
 [[Chapter 2  Physical Layer]]
