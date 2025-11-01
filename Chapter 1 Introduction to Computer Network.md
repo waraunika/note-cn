@@ -132,6 +132,87 @@
 	- network awareness: devices become more aware of the data they are handling
 	- performance: aims to enable faster service development and potentially more efficient data handling
 # 1.3 Network Software, Protocols and Standards
+## Protocols
+- Definition: A protocol is a set of rules and conventions that govern how devices on a network communicate
+- defines the format, order, timing of data exchange as well as error control mechanisms
+## Connection oriented / Connection less service
+### A. Connection Oriented Service
+- a service in which a connection (real or virtual) is setup and maintained for the duration of the communication
+- typically used to transport data at session layer
+- modelled after the telephone system
+- to talk to someone, one picks up the phone, dials the number, talks and then hangs up.
+- similarly, the service user first establishes a connection, and then uses it and then releases the connection
+- essential aspect: it acts like a tube: the sender pushes objects (bits) at one end, and the receiver takes them out at the other end
+### B. Connection-less Service
+- a service in which a connection is not present and maintained throughout the communication
+- modelled after postal system
+- each message carries the full destination address and each one is routed through the system, independent of each other
+- normally, when two messages are sent to same destination, 1st one sent will be 1st one to arrive
+### C. Difference
+
+| Feature     | Connection-Oriented                                          | Connection-less                                    |
+| ----------- | ------------------------------------------------------------ | -------------------------------------------------- |
+| Concept     | establishes a dedicated connection path before data transfer | sends data immediately without establishing a path |
+| Analogy     | Telephone Call                                               | Postal mail                                        |
+| Reliability | Reliable. guarantees delivery and order                      | Unreliable. No delivery/order guarantee            |
+| Overhead    | High                                                         | Low                                                |
+| Data flow   | like in a tube                                               | like individual letters                            |
+| Use Case    | File transfer, web browsing, email                           | Video streaming, DNS queries, VoIP                 |
+
+## Network Architecture
+- fundamental structure and design of a computer network, defining how devices connect, interact and communicate
+- a set of layers and protocols is called network architecture
+- **Key Examples**:
+	- TCP/IP Suite: The foundational architecture of the modern internet
+	- OSI Model: A theoretical 7-layer model for understanding network functions
+## Layers:
+- in a network, layer refers to:
+	- a distinct level of hierarchical system of protocols used to manage communication between distributed computer systems
+- each layer provides specific functions and services that contribute to the overall communication process and it interacts only with layers directly above it or below it
+### Need for layering:
+- Manages Complexity: Breaks down the complex process of communication into smaller, more manageable tasks (layers)
+- Modularity & ease of development: Developers can work on one layer without needing to understand the details of others
+- Simplifies Troubleshooting: Problems can be isolated to a specific layer, making debugging easier
+- Promotes Interoperability: Different vendors can create hardware/software for different layers, and as long as they adhere to the standard interfaces, they will work together
+### Need for Layered protocol architecture:
+- needed to structure the communication protocols used in networking in a clear and organised manner
+- protocols define the rules and conventions for data exchange, and when arranged into layers, each protocol in a given layer only interacts with the protocols in adjacent layers
+- this architecture allows for:
+	- abstraction: hiding complexity from layers above
+	- interoperability: systems and devices built by different vendors can work together as long as they conform to standard protocols
+	- re-usability and modularity: protocols can be designed or updated or replaced by other protocol within the same layer
+	- scalability: networks can grow without a need to overhaul the entire protocol stack
+	- troubleshooting and maintenance: issues can be isolated to specific layers, simplifying diagnosis and repair
+## Design Issues for Layers
+- Addressing: 
+	- For every layer, it is necessary to have a mechnism for identifying senders and receivers. 
+	- since, there are multiple possible destinations, some form of addressing is required in order to specify a specific destination
+- direction of transmission:
+	- based on whether the system communicates only in one direction or both, communication systems are classified as simplex, half duplex and full duplex systems
+- error control:
+	- error controls and detection both are essential since physical communication circuits are not perfect.
+	- the receiver must have some ways of telling the sender which messages have been correctly received and which are not
+- flow control:
+	- all communication channels cannot preserve the order in which messages are sent on it
+	- so some kind of coordination must be maintained to keep a fast sender from overwhelming a slow receiver with data
+- multiplexing: 
+	- multiplxeing and demultiplexing is to be shared the same channel by many sources simultaneously.
+	- it can be used for any layer
+	- it is mostly needed in physical layer
+	- where all the traffic has to be sent over few physical circuits
+- routing
+	- when there are multiple paths between source and destination, a proper route should be chosen
+	- routing uses the best path in each network
+1. define protocol
+2. explain about connection oriented and connection less service
+3. what do you mean by network architecture
+4. why do you need layering
+5. why do we need layered protocol architecture
+6. what are the reasons for using layered network architecture
+7. why layering is important
+8. what are the layer design issues
+9. explain design issues for layers in detail
+10. explain about the design issues of computer network software
 # 1.4 OSI Model and TCP/IP Model
 # 1.5 Comparison of OSI / TCP/IP
 # 1.6 Data Encapsulation

@@ -141,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Chapter 1 Introduction to Computer Network.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Chapter 1 Introduction to Computer Network"
             }
           }
         ],
@@ -170,6 +171,7 @@
   },
   "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
+    "push.sh",
     "image/ch1/peer2peer.png",
     "note-cn",
     "Chapter 1 Introduction to Computer Network.md",
