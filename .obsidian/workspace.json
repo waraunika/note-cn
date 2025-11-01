@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "427828cb17c34fe4",
@@ -169,6 +170,7 @@
   },
   "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
+    "image/ch1/peer2peer.png",
     "note-cn",
     "Chapter 1 Introduction to Computer Network.md",
     "Chapter 7 Introduction to IPV6.md",

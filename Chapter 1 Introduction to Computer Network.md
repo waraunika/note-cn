@@ -68,34 +68,69 @@
 	- even routine activities like checking the weather forecast on smartphone app involve fetching data from remote servers over a network, demonstrating how deeply networks are embedded in daily decision-making and access to public utilities.
 # 1.2 Networking model: C/S, P2P, active network
 ## Client Server Model
-- the data are stored on powerful computers called servers, often centrally housed and maintained by a system administrator
-- the data accessors have simpler machines, called clients on their disks
-- the client and server machines are connected by a network
-- the whole arrangement is collectively called client-server model
-- applicable when client and server are at any distance apart
-- two processes are involved: one on client machine, one on server machine:
-	- communication takes the form of client process sending a message over the network to the server process
-	- the client process then waits for a reply message
-	- when server process gets the request and accepts it
-	- it performs the required work or looks up the requested data and sends back a reply
+- definition: A distributed application structure that partitions tasks or workloads between the providers of a resource or service, called **servers**, and service requesters, called **clients**.
+- Figure:
+  ![[client_server_model.png]]
+- **Workings**:
+	- Centralised Servers: Powerful, dedicated computers (servers) host resources like data, applications, or services
+	- Client Requests: Simpler machines (clients) send a request message over the network to a server process to access a resource
+	- Server Processes & Replies: The server process listens for requests, performs the required work (e.g., fetching data, running a computation), and sends back a reply message
+	- Client Waits: The client process waits for and then processes the server's reply
+	- Figure:
+	  ![[client_server_processes.png]]
+- **Key Features**:
+	- Centralised Management: Data and security policies are managed centrally on the server
+	- Asymmetrical Roles: Clear distinction between client (consumer) and server (provider)
+	- Scalability: Can handle many clients by upgrading server hardware or adding more servers
+	- High Security: Access control and security are enforced at the server
+	- Dedicated Resources: Servers are often optimised for reliability and high availability
+- **Examples**:
+	- Web Browsing:
+		- Client: Web browser, Server: Web Server
+	- Email
+		- Client: Outlook/Gmail app, Server: Email server like Gmail/Exchange
+	- Online banking
+		- Client: Browser/app, Server: Bank's central server
 ## Peer-to-peer Model
-- individuals who form a loose group can communicate with others in the group
-- every person in principle can communicate with one or more other people;
-- there is no fixed division into client and server
-- is created when two or more PCs or devices are connected and share their resources without communicating to a central system
-- each peer has equal capabilities and responsibility
+- Definition: A decentralised model where each device (called a peer) can act as both a client and a server, sharing resources and responsibilities directly with other peers without a central server.
+- Figure:
+  ![[peer2peer.png]]
+- **Workings**:
+	- No central server: peers form a loose, often temporary, network
+	- equal capabilities: each peer has equal status and can initiate communication or provide resources.
+	- direct sharing: peers connect directly to each other to share files, processing power or bandwdith
+	- dynamic membership: peers can join or leave the network freely
+- **Key Features**:
+	- Decentralisation: No single point of failure or control
+	- Self-scaling: More users (peers) bring more resource to the network
+	- cost-effective: no need for expensive server infrastructure
+	- easy setup: relatively simple to setup for small groups
+- **Examples**:
+	- File sharing: BitTorrent, Torrent clients
+	- Blockchain/Cryptocurrencies: Bitcoin, Ethereum
+	- Early Internet Applications: Napster, Skype (originally)
+	- Collaborative Platforms: Some features of MS Teams, or Slack for direct file sharing
 ## Differences of CS/P2P model
 
-| Attribtue    | Client-Server       | Peer-to-Peer |
-| ------------ | ------------------- | ------------ |
-| setup        | difficult to set up | easy         |
-| installation |                     |              |
-
-1.  Discuss C/S model and Peer-to-Peer model
-2. how does C/S model work
-3. features of C/S architecture
-4. explain with examples: P2P network model, how does it work?
-5. difference between C/S and Peer to Peer
+| Attribtue      | Client-Server                                                                  | Peer-to-Peer                                                   |
+| -------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| architecture   | centralised, hierarchical                                                      | decentralised, flat                                            |
+| setup          | difficult to set up                                                            | easy                                                           |
+| installation   | expensive to install                                                           | cheaper                                                        |
+| OS requirement | clients: variety of OS is supported<br>server: OS that supports the networking | wide range of OS can be used                                   |
+| maintenance    | less time consuming, maintenance done from server side                         | more time consuming, computers have to be managed individually |
+| security       | high, controlled from server                                                   | very low or none                                               |
+| limit          | no limit to no. of computers                                                   | ideal for 10 or less                                           |
+| server         | requires a server, running Server OS                                           | no server required                                             |
+| skill          | requires high level of IT skills                                               | moderate level of skill                                        |
+## Active Network
+- Definition: A networking paradigm where the network infrastructure (routers, switches) is programmable and can perform customised computations on the data packets flowing through them, rather than just passively forwarding them
+- Concept: Packets don't just carry data; they also carry small programs or code that tells the network nodes what to do with them
+- **Key Features**:
+	- Flexibility: Enables rapid deployment of new network services and protocols without upgrading hardware
+	- Custom processing: Network nodes can modify, filter or process data in transit based on the carried code
+	- network awareness: devices become more aware of the data they are handling
+	- performance: aims to enable faster service development and potentially more efficient data handling
 # 1.3 Network Software, Protocols and Standards
 # 1.4 OSI Model and TCP/IP Model
 # 1.5 Comparison of OSI / TCP/IP
