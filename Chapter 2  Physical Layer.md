@@ -436,4 +436,4 @@ Packet Switching is preferred over circuit switching. because:
 				- the ISDN PRI services used 30 B channel, one D channel and one synchronising and framing bits with data rates of 64 Kbps each.
 				- total data rate is 2048 Kbps (E1 - Hierarchy). 
 
-[Link to Chapter 3][[Chapter 3 Data Link Layer]
+[[Chapter 3 Data Link Layer]]

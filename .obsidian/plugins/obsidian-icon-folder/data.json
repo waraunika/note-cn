@@ -6,6 +6,7 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "3️⃣",
       "2️⃣",
       "LiRows2",
       "1️⃣"
@@ -36,5 +37,6 @@
   "Chapter 2  Physical Layer.md": {
     "iconName": "2️⃣",
     "iconColor": "#f22626"
-  }
+  },
+  "Chapter 3 Data Link Layer.md": "3️⃣"
 }
