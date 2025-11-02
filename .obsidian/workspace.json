@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1 Introduction to Computer Network.md",
+                "file": "Chapter 2  Physical Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 1 Introduction to Computer Network"
+              "title": "Chapter 2  Physical Layer"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 1 Introduction to Computer Network.md",
+                "file": "Chapter 2  Physical Layer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Chapter 1 Introduction to Computer Network"
+              "title": "Outline of Chapter 2  Physical Layer"
             }
           }
         ],
@@ -171,13 +171,21 @@
   },
   "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
+    "image/ch2/isdn.png",
+    "image/ch2/E1.png",
+    "image/ch2/t1.png",
+    "image/ch2/wdm.png",
+    "image/ch2/tdm.png",
+    "image/ch2/fdm.png",
+    "image/ch2/multiplexing.png",
+    "image/ch2/message_switching.png",
+    "image/ch2/data_transfer_using_vci.png",
+    "image/ch2/datagram_switching.png",
+    "image/ch2/virtual_ckt.png",
     "Chapter 2  Physical Layer.md",
+    "image/ch2",
     "Chapter 1 Introduction to Computer Network.md",
-    "image/ch1/encapsulation.png",
-    "image/ch1/tcp_ip.png",
-    "image/ch1/osi_model.png",
     "push.sh",
-    "image/ch1/peer2peer.png",
     "note-cn",
     "Chapter 7 Introduction to IPV6.md",
     "Chapter 8 Network Security.md",
