@@ -151,7 +151,8 @@
               "title": "Outline of Chapter 3 Data Link Layer"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -171,28 +172,29 @@
   },
   "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
-    "Chapter 2  Physical Layer.md",
+    "Chapter 4 Network Layer.md",
     "Chapter 3 Data Link Layer.md",
-    "image/ch3/sliding_window_example.png",
-    "image/ch3/sliding_window.png",
-    "image/ch3/stop_and_wait.png",
-    "image/ch3/crc.png",
-    "image/ch3/checksum.png",
-    "image/ch3/parity_checking.png",
-    "image/ch3/selective_repeat.png",
-    "image/ch3/go_back_n_arq.png",
-    "image/ch3/error_stop_n_wait.png",
-    "image/ch3/stop_n_wait_arq.png",
+    "Chapter 2  Physical Layer.md",
+    "Chapter 1 Introduction to Computer Network.md",
+    "image/ch4/multicast.png",
+    "image/ch4/unicast.png",
+    "Chapter 5 Transport Layer.md",
+    "image/ch4/rarp_protocol.png",
+    "image/ch4/arp_protocol.png",
+    "image/ch4/flooding_2_3.png",
+    "image/ch4/flooding_1.png",
+    "image/ch4/dhcp_operation.png",
+    "image/ch4/ipv4_header.png",
+    "image/ch4/classful_addresses.png",
+    "image/ch4",
+    "image/ch4/devices_and_osi.png",
     "image/ch3",
     "[[.md",
     "image/ch2",
-    "Chapter 1 Introduction to Computer Network.md",
     "push.sh",
     "note-cn",
     "Chapter 7 Introduction to IPV6.md",
     "Chapter 8 Network Security.md",
-    "Chapter 6 Application Layer.md",
-    "Chapter 5 Transport Layer.md",
-    "Chapter 4 Network Layer.md"
+    "Chapter 6 Application Layer.md"
   ]
 }
