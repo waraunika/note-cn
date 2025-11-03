@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 6 Application Layer.md",
+                "file": "Chapter 7 Introduction to IPV6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 6 Application Layer"
+              "title": "Chapter 7 Introduction to IPV6"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 6 Application Layer.md",
+                "file": "Chapter 7 Introduction to IPV6.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Chapter 6 Application Layer"
+              "title": "Outline of Chapter 7 Introduction to IPV6"
             }
           }
         ],
@@ -171,25 +171,26 @@
   },
   "active": "d2762aa2d7247da7",
   "lastOpenFiles": [
-    "image/ch6/process_communication.png",
+    "image/ch7/ipv6_header.png",
+    "image/ch7/ipv4_ipv6.png",
+    "image/ch7/extension_headers.png",
+    "image/ch7/example_header_chain.png",
+    "image/ch7/dual_stack.png",
+    "image/ch7",
+    "image/ch7/tunneling.png",
+    "image/ch7/header_translation.png",
+    "Chapter 4 Network Layer.md",
     "Chapter 7 Introduction to IPV6.md",
     "Chapter 6 Application Layer.md",
+    "image/ch6/process_communication.png",
     "image/ch6/dns_server.png",
     "image/ch6/domain_name_hierarchy.png",
     "image/ch6/domain_name_label.png",
-    "image/ch6/dns_working.png",
-    "image/ch6/pop3.png",
-    "image/ch6/email_protocols.png",
     "Pasted.md",
-    "image/ch6/email_components.png",
-    "image/ch6/ftp_model.png",
-    "image/ch6/control_and_data.png",
     "push.sh.save",
-    "image/ch6/https.png",
     "image/ch6",
     "image/ch5/Untitled",
     "Chapter 5 Transport Layer.md",
-    "Chapter 4 Network Layer.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Chapter 8 Network Security.md",
