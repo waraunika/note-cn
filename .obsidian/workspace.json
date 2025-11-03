@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3 Data Link Layer.md",
+                "file": "Chapter 5 Transport Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 3 Data Link Layer"
+              "title": "Chapter 5 Transport Layer"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "427828cb17c34fe4",
@@ -170,31 +169,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "4c8c2968d41a2863",
+  "active": "d2762aa2d7247da7",
   "lastOpenFiles": [
+    "image/ch5/leaky_bucket.png",
+    "image/ch5/leaky_bucket_implementation.png",
+    "image/ch5/token_bucket_analogy.png",
+    "image/ch5/token_bucket.png",
+    "Chapter 6 Application Layer.md",
+    "image/ch5/buffering_startegies.png",
+    "Pasted image 20251103105516.png",
+    "Chapter 5 Transport Layer.md",
+    "image/ch5/closing_connection.png",
+    "image/ch5/old_connection_request.png",
+    "image/ch5/3_way_handshake.png",
     "Chapter 4 Network Layer.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Chapter 8 Network Security.md",
+    "Chapter.md",
+    "Pasted image 20251103093558.png",
+    "image/ch5/udp_header.png",
     "Chapter 3 Data Link Layer.md",
     "Chapter 2  Physical Layer.md",
+    "image/ch5",
     "Chapter 1 Introduction to Computer Network.md",
-    "image/ch4/multicast.png",
-    "image/ch4/unicast.png",
-    "Chapter 5 Transport Layer.md",
-    "image/ch4/rarp_protocol.png",
-    "image/ch4/arp_protocol.png",
-    "image/ch4/flooding_2_3.png",
-    "image/ch4/flooding_1.png",
-    "image/ch4/dhcp_operation.png",
-    "image/ch4/ipv4_header.png",
-    "image/ch4/classful_addresses.png",
     "image/ch4",
-    "image/ch4/devices_and_osi.png",
     "image/ch3",
     "[[.md",
     "image/ch2",
     "push.sh",
     "note-cn",
-    "Chapter 7 Introduction to IPV6.md",
-    "Chapter 8 Network Security.md",
-    "Chapter 6 Application Layer.md"
+    "Chapter 7 Introduction to IPV6.md"
   ]
 }
