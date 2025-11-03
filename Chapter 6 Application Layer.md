@@ -62,7 +62,7 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 		- This persistent connection is established first and remains open for the entire session
 		- It is used to send commands (e.g., `LIST`, `GET`, `PUT`) and receive replies (status codes)
 		- Handles user authentication (username/password)
-	2. Data Connection (Port)
+	2. Data Connection (Port 20)
 		- This connection is opened and closed for each individual file transfer or directory listing
 		- It is used only for the actual transfer of file data or directory contents
 - **FTP Server Working Principle and Data Transfer Process**:
@@ -73,6 +73,9 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 		- For the actual transfer, the server opens a second TCP connection back to the client on port 20 (the data connection)
 	5. Data Transfer: The requested file data or directory listing is sent over the connection.
 	6. Connection Teardown: Once the transfer is complete, the data connection is closed. The control connection remains open, ready for the next command
+- Figure:
+  ![|500][control_and_data.png]
+  ![|600][ftp_model.png]
 #### TFTP (Trivial File Transfer Protocol)
 - Concept: TFTP is simple, lockstep, connection-less file transfer protocol that uses UDP (Port 69) instead of TCP
 - Key Characteristics (vs FTP):
@@ -115,6 +118,8 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 		- The protocol that retrieves mail from the server
 		- Since SMTP is a push protocol, a separate pull protocol is needed for the user agent to download messages (pulling) from the server mailbox.
 		- Common MAAs are POP3 and IMAP
+	- Figure:
+	  ![|500][email_components.png]
 - Architecture Flow:
   `Sender -> User Agent -> [MTA (SMTP)] -> ...` 
   `... -> [MTA (SMTP)] -> Receiver's Mail Server -> [MAA (POP3/IMAP)] -> User Agent -> Receiver
@@ -126,10 +131,12 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 	3. Relay & Delivery (SMTP):
 		- The sender's MTA finds the recipient's mail server and uses SMTP to forward it across the internet, potentially through various other MTAs, until it reaches the recipient's final final server.
 		- the message is placed in the recipient's mailbox on that server
-	- Retrieval (POP3/IMAP):
+	4. Retrieval (POP3/IMAP):
 		- The recipient's UA periodically checks their mail server
 		- Uses a MAA protocol like POP3 or IMAP to pull the message to the recipient's device
-	4. Reading: The recipient reads the message in their UA
+	5. Reading: The recipient reads the message in their UA
+	6. Figure:
+	   ![|500][email_protocols.png]
 - Mail Agents:
 	- It is a collective term for the software components that handle amil.
 	- The three primary agents are the User Agent (UA), Message Transfer Agent (MTA) and Message Access Agent (MAA)
@@ -178,6 +185,8 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 	- The user cannot have different folders on the server
 	- The user cannot partially check the contents email before downloading
 	- For nomadic user who would prefer to maintain a folder hierarchy on a remote server, that can be accessed from any computer, this is not possible
+- Figure:
+  ![|350][pop3.png]
 ### B.2 IMAP
 - Concept:
 	- IMAP is more advanced and feature-rich pull-based protocol for accessing email from a mail server.
@@ -226,6 +235,8 @@ While HTTPS usage is growing, HTTPS is not universally applied for all web traff
 	3. The TLD server responds with the address of the Authoritative DNS server for the specific domain (e.g., google.com)
 5. The local DNS Server finally queries the Authoritative DNS Server, which returns the IP address for the requested hostname
 6. The local DNS Server sends the IP address back to the user's application which can now initiate a connection
+7. Figure:
+   ![600][dns_working.png]
 **Why DNS is Distributive?**
 - a single, central database for all internet names would be impossible to manage, maintain and scale
 - a distributed system is fault-tolerant, scalable and avoids a single point of failure
@@ -236,11 +247,16 @@ The DNS namespace is hierarchical, inverted tree structure
 - Second-Level Domains: The unique part of a domain name that is purchased (e.g., `google` in `google.com`)
 - FQDN (Fully Qualified Domain Name): The complete domain name, including the host and all domains (e.g., `mail.google.com`)
 - PQDN (Partially Qualified Domain Name): if the label is not terminated by a null string
+- Figure:
+  ![|550][domain_name_label.png]
+  ![|550][domain_name_hierarchy.png]
 ## C. Hierarchy of Name Servers
 1. Root DNS Servers: Know the location of the TLD servers
 2. Top-level domain Servers: TLD is one of the responsible for `com`, `org`, `net`, `edu`, etc and all top-level country domains `np`, `uk`, `jp`. they know the authoritative servers for domains under their TLD
 3. Authoritative DNS servers: Holds the actual DNS records for IP address of specific domains
 4. Local (Recursive) DNS servers: the first server a client contacts. It does the legwork of finding the answer
+5. figure:
+   ![|550][dns_server.png]
 ## D. DNS Query Types
 - Recursive Query:
 	- The client demands a final answer
@@ -299,6 +315,9 @@ DNS database is stored as Resource records (RRs). Key record types include:
 
 - sockets are fundamental API that allows programs to use the network
 - they abstract the underlying hardware and protocol complexities, letting developers build networked applications (web browsers, servers, chat apps) by simply reading from and writing to these end points.
+
+- figures
+  ![|550][process_communication.png]
 ###### Types of sockets:
 | Type            | Protocol  | Characteristics                                                | Use Case                                           |
 | --------------- | --------- | -------------------------------------------------------------- | -------------------------------------------------- |

@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "427828cb17c34fe4",
@@ -170,23 +169,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "4c8c2968d41a2863",
+  "active": "d2762aa2d7247da7",
   "lastOpenFiles": [
+    "image/ch6/process_communication.png",
+    "Chapter 7 Introduction to IPV6.md",
+    "Chapter 6 Application Layer.md",
+    "image/ch6/dns_server.png",
+    "image/ch6/domain_name_hierarchy.png",
+    "image/ch6/domain_name_label.png",
+    "image/ch6/dns_working.png",
+    "image/ch6/pop3.png",
+    "image/ch6/email_protocols.png",
+    "Pasted.md",
+    "image/ch6/email_components.png",
+    "image/ch6/ftp_model.png",
+    "image/ch6/control_and_data.png",
+    "push.sh.save",
     "image/ch6/https.png",
     "image/ch6",
     "image/ch5/Untitled",
-    "image/ch6/http.png",
     "Chapter 5 Transport Layer.md",
-    "image/ch5/leaky_bucket.png",
-    "image/ch5/leaky_bucket_implementation.png",
-    "image/ch5/token_bucket_analogy.png",
-    "image/ch5/token_bucket.png",
-    "Chapter 6 Application Layer.md",
-    "image/ch5/buffering_startegies.png",
-    "Pasted image 20251103105516.png",
-    "image/ch5/closing_connection.png",
-    "image/ch5/old_connection_request.png",
-    "image/ch5/3_way_handshake.png",
     "Chapter 4 Network Layer.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
@@ -201,7 +203,6 @@
     "[[.md",
     "image/ch2",
     "push.sh",
-    "note-cn",
-    "Chapter 7 Introduction to IPV6.md"
+    "note-cn"
   ]
 }
