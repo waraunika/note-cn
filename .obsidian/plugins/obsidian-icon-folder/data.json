@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "6️⃣",
       "5️⃣",
       "4️⃣",
       "3️⃣",
-      "2️⃣",
-      "LiRows2"
+      "2️⃣"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,5 +41,6 @@
   },
   "Chapter 3 Data Link Layer.md": "3️⃣",
   "Chapter 4 Network Layer.md": "4️⃣",
-  "Chapter 5 Transport Layer.md": "5️⃣"
+  "Chapter 5 Transport Layer.md": "5️⃣",
+  "Chapter 6 Application Layer.md": "6️⃣"
 }
