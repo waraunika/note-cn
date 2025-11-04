@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "8️⃣",
       "7️⃣",
       "6️⃣",
       "5️⃣",
-      "4️⃣",
-      "3️⃣"
+      "4️⃣"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,5 +43,6 @@
   "Chapter 4 Network Layer.md": "4️⃣",
   "Chapter 5 Transport Layer.md": "5️⃣",
   "Chapter 6 Application Layer.md": "6️⃣",
-  "Chapter 7 Introduction to IPV6.md": "7️⃣"
+  "Chapter 7 Introduction to IPV6.md": "7️⃣",
+  "Chapter 8 Network Security.md": "8️⃣"
 }

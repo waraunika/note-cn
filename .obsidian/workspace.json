@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 7 Introduction to IPV6.md",
+                "file": "Chapter 8 Network Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 7 Introduction to IPV6"
+              "title": "Chapter 8 Network Security"
             }
           }
         ]
@@ -141,21 +141,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 7 Introduction to IPV6.md",
+                "file": "Chapter 8 Network Security.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Chapter 7 Introduction to IPV6"
+              "title": "Outline of Chapter 8 Network Security"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 258.5,
+    "width": 234.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -171,21 +171,22 @@
   },
   "active": "d2762aa2d7247da7",
   "lastOpenFiles": [
-    "image/ch7/ipv6_header.png",
-    "image/ch7/ipv4_ipv6.png",
-    "image/ch7/extension_headers.png",
-    "image/ch7/example_header_chain.png",
-    "image/ch7/dual_stack.png",
-    "image/ch7",
-    "image/ch7/tunneling.png",
-    "image/ch7/header_translation.png",
-    "Chapter 4 Network Layer.md",
+    "image/ch8/deffi_helman.png",
+    "image/ch8/digital_signature.png",
+    "image/ch8/pgp_4.png",
+    "image/ch8/pgp_3.png",
+    "image/ch8/pgp_2.png",
+    "image/ch8/pgp_1.png",
+    "image/ch8/SSL.png",
+    "image/ch8/remote_access_vpn.png",
+    "image/ch8/site_to_site_vpn.png",
+    "image/ch8/firewall.png",
+    "image/ch8/packet_filter.png",
+    "image/ch8",
     "Chapter 7 Introduction to IPV6.md",
+    "image/ch7",
+    "Chapter 4 Network Layer.md",
     "Chapter 6 Application Layer.md",
-    "image/ch6/process_communication.png",
-    "image/ch6/dns_server.png",
-    "image/ch6/domain_name_hierarchy.png",
-    "image/ch6/domain_name_label.png",
     "Pasted.md",
     "push.sh.save",
     "image/ch6",
@@ -203,7 +204,6 @@
     "image/ch3",
     "[[.md",
     "image/ch2",
-    "push.sh",
-    "note-cn"
+    "push.sh"
   ]
 }
