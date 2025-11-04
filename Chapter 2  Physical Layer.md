@@ -100,7 +100,7 @@ Network performance is an important issue in data and computer networking. Vario
 	- cladding: plastic or glass coating with optical properties different from core
 	- jacket: outermost layer surrounding one or more cladding
 - Figure:
-  ![Optical Fibre | 225][optical_fibre.png]![Total Internal Reflection | 425][working_optical_fibre.png]
+  ![[optical_fibre.png]]![[working_optical_fibre.png]]
 - **Applications**:
 	- used in cable TV networks
 	- used in backbone network (can transfer data rates of 1600 Gbps)
@@ -169,7 +169,7 @@ Network performance is an important issue in data and computer networking. Vario
 	- unreliable outside building because sun rays will interfere with infrared waves
 	- limited to short distances and highly directional
 ## 2.2.3 Satellite
-- physical object that revolves around the earth a known height
+- physical object that revolves around the earth at known height
 - placed in earth orbit for the purpose of communicating, weather forecast, research, military purpose, etc
 - satellite accepts the signal that is transmitted from the earth station and amplifies the signal
 - amplified signal is re-transmitted to another station
@@ -267,16 +267,6 @@ Network performance is an important issue in data and computer networking. Vario
 	- every switch in the transit path needs enough storage to accommodate the entire message
 	- because of store-and-forward technique, and waits included until resources are available, message switching is very slow
 	- message switching was not a solution for streaming media and real-time application
-1. define switching
-2. explain various switching technology with practical implementation examples
-3. explain packet switching in detail
-4. discuss how data goes throw switch to switch in frame relay victual-circuit network
-5. differentiate between datagram switching and virtual circuit switching approach
-6. explain virtual circuit switching in detail
-7. differentiate circuit switching and packet switching, and which you would prefer, and why?
-
-
-
 ### D. Miscellaneous
 #### Comparison
 | Aspect         | Circuit Switching                                                     | Packet Switching                                      |

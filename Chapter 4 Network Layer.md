@@ -1,6 +1,6 @@
 Functions:
 1. Routing:
-	- When a packet reaches the router's input link, the router will move the packets to the 
+	- When a packet reaches the router's input link, the router will move the packets to the next router
 2. Logical Addressing:
 	- the data link layer implements the physical addressing and the network layer implements logical addressing
 	- logical addressing is also used to distinguish between source and destination system
@@ -37,7 +37,7 @@ Functions:
 - it receives a packet and selects the optimum path to forward the packet across the network
 ## F. Gateway
 - software or combination of software and hardware, that works for exchanging data among networks which are using different protocols for sharing data
-- used to connect multiple networks and pass packets from one packet to the other network
+- used to connect multiple networks and pass packets from one network to the other network
 - able to convert or translate the data format, although the data itself remains unchanged
 # 4.2 Addressing
 ## A. Internet Protocol
@@ -53,7 +53,7 @@ Functions:
 - Notation:
   Binary      10000000.00001011.00000011.00011111
   Decimal   128.11.3.31
-- IP address is general written in dotted decimal notation.
+- IP address is generally written in dotted decimal notation.
 ### A.2 Classes of IP Address
 - There are 5 classes; A, B, C, D E
 - Usage:
@@ -409,7 +409,7 @@ When subnetting a network following five things  should be determined
 - routing inside an autonomous system is referred to as interior routing
 - routing between autonomous systems is referred to as exterior routing
 - each AS can choose one or more routing protocols to handle routing inside the AS.
-- however, only one interior domain routing protocol handles routing between AS's.
+- however, only one inter domain routing protocol handles routing between AS's.
 ## A. Routing Information Protocol (RIP)
 - **Overview**: 
 	- RIP is a distance vector, interior gateway protocol (IGP) designed for small, stable networks.

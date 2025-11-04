@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 8 Network Security.md",
+                "file": "Chapter 3 Data Link Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 8 Network Security"
+              "title": "Chapter 3 Data Link Layer"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "427828cb17c34fe4",
@@ -169,8 +170,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "d2762aa2d7247da7",
+  "active": "4c8c2968d41a2863",
   "lastOpenFiles": [
+    "Chapter 2  Physical Layer.md",
+    "Chapter 1 Introduction to Computer Network.md",
+    "[[.md",
+    "Chapter 4 Network Layer.md",
+    "Chapter 3 Data Link Layer.md",
+    "Chapter 8 Network Security.md",
     "image/ch8/deffi_helman.png",
     "image/ch8/digital_signature.png",
     "image/ch8/pgp_4.png",
@@ -181,11 +188,9 @@
     "image/ch8/remote_access_vpn.png",
     "image/ch8/site_to_site_vpn.png",
     "image/ch8/firewall.png",
-    "image/ch8/packet_filter.png",
     "image/ch8",
     "Chapter 7 Introduction to IPV6.md",
     "image/ch7",
-    "Chapter 4 Network Layer.md",
     "Chapter 6 Application Layer.md",
     "Pasted.md",
     "push.sh.save",
@@ -194,15 +199,10 @@
     "Chapter 5 Transport Layer.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Chapter 8 Network Security.md",
     "Chapter.md",
-    "Chapter 3 Data Link Layer.md",
-    "Chapter 2  Physical Layer.md",
     "image/ch5",
-    "Chapter 1 Introduction to Computer Network.md",
     "image/ch4",
     "image/ch3",
-    "[[.md",
     "image/ch2",
     "push.sh"
   ]

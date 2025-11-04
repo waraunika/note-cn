@@ -111,7 +111,6 @@
 	- Early Internet Applications: Napster, Skype (originally)
 	- Collaborative Platforms: Some features of MS Teams, or Slack for direct file sharing
 ## Differences of CS/P2P model
-
 | Attribtue      | Client-Server                                                                  | Peer-to-Peer                                                   |
 | -------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | architecture   | centralised, hierarchical                                                      | decentralised, flat                                            |
@@ -149,7 +148,6 @@
 - each message carries the full destination address and each one is routed through the system, independent of each other
 - normally, when two messages are sent to same destination, 1st one sent will be 1st one to arrive
 ### C. Difference
-
 | Feature     | Connection-Oriented                                          | Connection-less                                    |
 | ----------- | ------------------------------------------------------------ | -------------------------------------------------- |
 | Concept     | establishes a dedicated connection path before data transfer | sends data immediately without establishing a path |
@@ -158,7 +156,6 @@
 | Overhead    | High                                                         | Low                                                |
 | Data flow   | like in a tube                                               | like individual letters                            |
 | Use Case    | File transfer, web browsing, email                           | Video streaming, DNS queries, VoIP                 |
-
 ## Network Architecture
 - fundamental structure and design of a computer network, defining how devices connect, interact and communicate
 - a set of layers and protocols is called network architecture
@@ -203,16 +200,6 @@
 - routing
 	- when there are multiple paths between source and destination, a proper route should be chosen
 	- routing uses the best path in each network
-1. define protocol
-2. explain about connection oriented and connection less service
-3. what do you mean by network architecture
-4. why do you need layering
-5. why do we need layered protocol architecture
-6. what are the reasons for using layered network architecture
-7. why layering is important
-8. what are the layer design issues
-9. explain design issues for layers in detail
-10. explain about the design issues of computer network software
 # 1.4 OSI Model and TCP/IP Model
 ## OSI Model
 - International Standard Organisation (ISO) has developed a reference for network design in 1977 commonly known as Open System Interconnection
@@ -272,7 +259,6 @@
 - educational clarity
 - guidance for protocol standardisation bodies
 ### Physical Channel vs Physical Layer
-
 | Aspect     | Channel                                                             | Layer                                                                                                                                                                     |
 | ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Defn       | A medium/path through which signals are transmitted between devices | lowest layer of OSI model that defines electrical, mechanical, procedural and functional specifications for activating, maintaining and deactivating the physical channel |
@@ -280,7 +266,6 @@
 | scope      | concerned with physical medium                                      | concerned with signal representation, data rate, modulation, etc                                                                                                          |
 | visibility | not a layer, just a resource to be used                             | an actual layer in OSI model                                                                                                                                              |
 | eg         | optical fiber, 2.4 GHz WiFi band                                    | defines voltage levels for bits on a copper wire, pin configuration of RJ45                                                                                               |
-
 ## TCP/IP Model
 - stands for Transmission Control Protocol and Internet Protocol
 - used by ARPANET (Advanced Research Project Agency)
@@ -420,4 +405,4 @@
 - Asymmetric DSL (ADSL) is common, offering higher download than upload speeds
 - Much faster than traditional dial-up, allowing voice and data simultaneously
 
-[Next Chapter][[Chapter 2  Physical Layer]]]
+[[Chapter 2  Physical Layer]]
